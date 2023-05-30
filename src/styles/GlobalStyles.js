@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 import * as colors from '../config/colors';
+import backgroundImg from '../assets/images/background.webp';
 import '../assets/styles/default.css';
 
 export default createGlobalStyle`
@@ -17,7 +18,9 @@ export default createGlobalStyle`
     font-size: 62.5%;
     font-family: 'Blinker', sans-serif;
     color: ${colors.color};
-    background-color: ${colors.backgroundColor};
+    background: ${colors.backgroundColor};
+    background-image: url(${backgroundImg});
+    background-repeat: repeat;
   }
 `;
 
