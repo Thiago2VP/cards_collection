@@ -1,2 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@font-face {
+    font-family: ArgorBiwSc;
+    src: url('../fonts/ArgBiwSc.ttf');
+}
+@font-face {
+    font-family: Flatearth;
+    src: url('../fonts/Flat\ Earth\ Scribe.ttf');
+}
