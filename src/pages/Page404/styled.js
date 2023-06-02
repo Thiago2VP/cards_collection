@@ -10,4 +10,15 @@ export const Main = styled.main`
   justify-content: center;
   text-align: center;
   margin: auto;
+
+  h1 {
+    font-size: 6rem;
+    color: #100ea0;
+    text-shadow: 1px 0 #f90716, 0 -1px #f90716, 0 1px #f90716, -1px 0 #f90716;
+  }
+  p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #100ea0;
+  }
 `;
