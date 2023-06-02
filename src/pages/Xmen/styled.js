@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-import back from '../../assets/images/eye-of-horus.webp';
-
 export const Main = styled.main`
   width: 100%;
   margin: auto;
-  background-image: url(${back});
-  background-size: 240px auto;
-  background-position: center;
+  background: rgb(145, 25, 22);
+  background: linear-gradient(142deg, rgba(145, 25, 22, 1) 20%, rgba(74, 11, 10, 1) 50%);
   overflow: hidden;
 `;
 
@@ -21,14 +18,14 @@ export const CollectionSection = styled.section`
   justfy-content; center;
   text-align: center;
 
-  .CardEffectMit {
+  .CardEffectXmen {
     margin: 2rem auto;
     padding: 0;
     display: flex;
   }
-  .CardEffectMit:hover {
-    background: rgba(102, 31, 11, 0.5);
-    animation: brightMit 3.8s linear 0.1s infinite;
+  .CardEffectXmen:hover {
+    background: rgba(193, 182, 190, 0.8);
+    animation: brightXmn 3.8s linear 0.1s infinite;
 
     .CardImg {
       padding: 0;
@@ -52,21 +49,21 @@ export const CollectionSection = styled.section`
   @media (max-width: 300px) {
     padding: 0;
   }
-  @keyframes brightMit {
+  @keyframes brightXmn {
     0% {
-      box-shadow: 7px 7px 20px #661f0b;
+      box-shadow: 7px 7px 20px #c1b6be;
     }
     20% {
-      box-shadow: 7px -7px 20px #661f0b;
+      box-shadow: 7px -7px 20px #c1b6be;
     }
     40% {
-      box-shadow: -7px -7px 20px #661f0b;
+      box-shadow: -7px -7px 20px #c1b6be;
     }
     60% {
-      box-shadow: -7px 7px 20px #661f0b;
+      box-shadow: -7px 7px 20px #c1b6be;
     }
     100% {
-      box-shadow: 7px 7px 20px #661f0b;
+      box-shadow: 7px 7px 20px #c1b6be;
     }
   }
 `;
@@ -86,11 +83,11 @@ export const BackSection = styled.section`
     margin: 2.5rem auto;
     padding: 2rem;
     border-radius: 100%;
-    color: #744021;
-    border: 5px solid #744021;
+    color: #4a0b0a;
+    border: 5px solid #4a0b0a;
   }
   a:hover {
-    background: #744021;
+    background: #4a0b0a;
     color: #f9fd6b;
     border: 5px solid #f9fd6b;
   }

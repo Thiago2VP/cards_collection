@@ -34,7 +34,7 @@ import card28 from '../../assets/images/mitoCards/myth-28.png';
 import card29 from '../../assets/images/mitoCards/myth-29.png';
 import card30 from '../../assets/images/mitoCards/myth-30.png';
 
-export default function Dracomania() {
+export default function Mitomania() {
   return (
     <Styles.Main>
       <Styles.CollectionSection>

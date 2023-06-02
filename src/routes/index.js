@@ -6,6 +6,7 @@ import Dracomania from '../pages/Dracomania';
 import Mitomania from '../pages/Mitomania';
 import Naruto from '../pages/Naruto';
 import Xmen from '../pages/Xmen';
+import Page404 from '../pages/Page404';
 
 export default function MyRoutes() {
   return (
@@ -15,7 +16,7 @@ export default function MyRoutes() {
       <Route exact path="/mitomania" element={<Mitomania />} />
       <Route exact path="/naruto" element={<Naruto />} />
       <Route exact path="/xmen" element={<Xmen />} />
-      <Route path="*" element={<Home />} />
+      <Route path="*" element={<Page404 />} />
     </Routes>
   );
 }

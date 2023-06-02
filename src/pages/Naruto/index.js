@@ -34,7 +34,7 @@ import card28 from '../../assets/images/naruCards/narut-28.png';
 import card29 from '../../assets/images/naruCards/narut-29.png';
 import card30 from '../../assets/images/naruCards/narut-30.png';
 
-export default function Dracomania() {
+export default function Naruto() {
   return (
     <Styles.Main>
       <Styles.CollectionSection>
