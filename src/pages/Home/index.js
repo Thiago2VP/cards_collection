@@ -173,14 +173,13 @@ export default function Home() {
                 className="LogoDraco"
                 style={{
                   position: 'absolute',
-                  top: '8%',
-                  right: '8%',
+                  top: '7%',
+                  left: '8%',
                   textDecoration: 'none',
                   fontSize: '6rem',
                   fontFamily: 'ArgorBiwSc, sans-serif',
                   letterSpacing: '1px',
-                  color: '#530303',
-                  textShadow: '1px 1px #bd0202',
+                  color: '#d9c389',
                   visibility: `${dracVis}`,
                 }}
               >
@@ -199,7 +198,7 @@ export default function Home() {
                   paddingBottom: '2rem',
                   visibility: `${dracVis}`,
                   cursor: 'pointer',
-                  background: '#530303',
+                  background: '#d9c389',
                   border: 'none',
                   borderRadius: '100%',
                   color: '#2a300c',
@@ -233,7 +232,7 @@ export default function Home() {
                   paddingBottom: '2rem',
                   visibility: `${dracVis}`,
                   cursor: 'pointer',
-                  background: '#530303',
+                  background: '#d9c389',
                   border: 'none',
                   borderRadius: '100%',
                   color: '#2a300c',

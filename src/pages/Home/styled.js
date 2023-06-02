@@ -159,7 +159,7 @@ export const Dracomania = styled.div`
   background: green;
   background-image: url(${draBack});
   background-size: auto 720px;
-  background-position: top left;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   align-itens: center;
@@ -172,18 +172,18 @@ export const Dracomania = styled.div`
   transition: width 1.8s linear 0.1s;
 
   .LogoDraco {
-    animation: shadowChange 1.5s linear 0.1s infinite;
+    animation: change 1.5s linear 0.1s infinite;
   }
 
-  @keyframes shadowChange {
+  @keyframes change {
     0% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
     }
     50% {
-      text-shadow: 1px 1px;
+      transform: scale(1.1);
     }
     100% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
     }
   }
 `;
@@ -206,18 +206,18 @@ export const Mitomania = styled.div`
   transition: width 1.8s linear 0.1s;
 
   .LogoMito {
-    animation: shadowChange 1.5s linear 0.1s infinite;
+    animation: change 1.5s linear 0.1s infinite;
   }
 
-  @keyframes shadowChange {
+  @keyframes change {
     0% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
     }
     50% {
-      text-shadow: 1px 1px;
+      transform: scale(1.1);
     }
     100% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
     }
   }
 `;
