@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-import back from '../../assets/images/eye-of-horus.webp';
-
 export const Main = styled.main`
   width: 100%;
   margin: auto;
-  background-image: url(${back});
-  background-size: 240px auto;
-  background-position: center;
+  background: #e4ddc8;
+  border: 2rem solid #b35a63;
+  border-top-width: 0;
   overflow: hidden;
 `;
 
@@ -21,14 +19,195 @@ export const CollectionSection = styled.section`
   justfy-content; center;
   text-align: center;
 
-  .CardEffectMit {
+  .CardEffectNaru {
     margin: 2rem auto;
     padding: 0;
     display: flex;
+    position: relative;
+
+    .Label #shur1 {
+      display: none;
+    }
+    .Label #shur1:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur2 {
+      display: none;
+    }
+    .Label #shur2:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur3 {
+      display: none;
+    }
+    .Label #shur3:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur4 {
+      display: none;
+    }
+    .Label #shur4:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur5 {
+      display: none;
+    }
+    .Label #shur5:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur6 {
+      display: none;
+    }
+    .Label #shur6:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur7 {
+      display: none;
+    }
+    .Label #shur7:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur8 {
+      display: none;
+    }
+    .Label #shur8:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur9 {
+      display: none;
+    }
+    .Label #shur9:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur10 {
+      display: none;
+    }
+    .Label #shur10:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur11 {
+      display: none;
+    }
+    .Label #shur11:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur12 {
+      display: none;
+    }
+    .Label #shur12:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur13 {
+      display: none;
+    }
+    .Label #shur13:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur14 {
+      display: none;
+    }
+    .Label #shur14:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur15 {
+      display: none;
+    }
+    .Label #shur15:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur16 {
+      display: none;
+    }
+    .Label #shur16:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur17 {
+      display: none;
+    }
+    .Label #shur17:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur18 {
+      display: none;
+    }
+    .Label #shur18:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur19 {
+      display: none;
+    }
+    .Label #shur19:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur20 {
+      display: none;
+    }
+    .Label #shur20:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur21 {
+      display: none;
+    }
+    .Label #shur21:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur22 {
+      display: none;
+    }
+    .Label #shur22:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur23 {
+      display: none;
+    }
+    .Label #shur23:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur24 {
+      display: none;
+    }
+    .Label #shur24:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur25 {
+      display: none;
+    }
+    .Label #shur25:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur26 {
+      display: none;
+    }
+    .Label #shur26:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur27 {
+      display: none;
+    }
+    .Label #shur27:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur28 {
+      display: none;
+    }
+    .Label #shur28:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
+    .Label #shur29 {
+      display: none;
+    }
+    .Label #shur29:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite;
+    }
+    .Label #shur30 {
+      display: none;
+    }
+    .Label #shur30:checked + div {
+      animation: spinCard 0.3s linear 0.1s infinite reverse;
+    }
   }
-  .CardEffectMit:hover {
-    background: rgba(102, 31, 11, 0.5);
-    animation: brightMit 3.8s linear 0.1s infinite;
+  .CardEffectNaru:hover {
+    transform: skewY(7deg) rotateY(20deg);
 
     .CardImg {
       padding: 0;
@@ -52,21 +231,15 @@ export const CollectionSection = styled.section`
   @media (max-width: 300px) {
     padding: 0;
   }
-  @keyframes brightMit {
+  @keyframes spinCard {
     0% {
-      box-shadow: 7px 7px 20px #661f0b;
+      transform: rotate(0deg);
     }
-    20% {
-      box-shadow: 7px -7px 20px #661f0b;
-    }
-    40% {
-      box-shadow: -7px -7px 20px #661f0b;
-    }
-    60% {
-      box-shadow: -7px 7px 20px #661f0b;
+    50% {
+      transform: rotate(180deg);
     }
     100% {
-      box-shadow: 7px 7px 20px #661f0b;
+      transform: rotate(360deg);
     }
   }
 `;
@@ -81,17 +254,17 @@ export const BackSection = styled.section`
   font-size: 3rem;
 
   a {
-    background: #f9fd6b;
+    background: #e4ddc8;
     display: flex;
     margin: 2.5rem auto;
     padding: 2rem;
     border-radius: 100%;
-    color: #744021;
-    border: 5px solid #744021;
+    color: black;
+    border: 5px solid black;
   }
   a:hover {
-    background: #744021;
-    color: #f9fd6b;
-    border: 5px solid #f9fd6b;
+    background: black;
+    color: #e4ddc8;
+    border: 5px solid #e4ddc8;
   }
 `;
