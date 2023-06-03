@@ -24,6 +24,7 @@ export const CollectionSection = styled.section`
     padding: 0;
     display: flex;
     position: relative;
+    transition: transform 0.4s linear 0.1s;
 
     .Label #shur1 {
       display: none;
@@ -208,6 +209,7 @@ export const CollectionSection = styled.section`
   }
   .CardEffectNaru:hover {
     transform: skewY(7deg) rotateY(20deg);
+    transition: transform 0.4s linear 0.1s;
 
     .CardImg {
       padding: 0;
@@ -261,10 +263,12 @@ export const BackSection = styled.section`
     border-radius: 100%;
     color: black;
     border: 5px solid black;
+    transition: background-color 0.4s linear 0.1s;
   }
   a:hover {
     background: black;
     color: #e4ddc8;
     border: 5px solid #e4ddc8;
+    transition: background-color 0.4s linear 0.1s;
   }
 `;

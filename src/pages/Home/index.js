@@ -22,6 +22,8 @@ export default function Home() {
   const [naruVis, setNaruVis] = useState('hidden');
   const [xmenW, setXmenW] = useState('0%');
   const [xmenVis, setXmenVis] = useState('hidden');
+  const [cheetVerW, setCheetVerW] = useState('0%');
+  const [fandVerW, setFandVerW] = useState('0%');
 
   if (mediaW > 1280) {
     setMediaW(1280);
@@ -38,7 +40,12 @@ export default function Home() {
 
   setTimeout(() => {
     setPreVis('visible');
+    setCheetVerW('100%');
   }, '600');
+
+  setTimeout(() => {
+    setFandVerW('100%');
+  }, '1200');
 
   async function dracVisib() {
     setTimeout(() => {
@@ -403,7 +410,7 @@ export default function Home() {
               </button>
               <button
                 type="button"
-                className="LogoNaru"
+                className="LogoNaru ArrowRight"
                 style={{
                   position: 'absolute',
                   zIndex: '1',
@@ -501,9 +508,10 @@ export default function Home() {
           </Styles.Camera>
         </Styles.SectionWide>
       ) : (
-        <div>
-          <h1>Hello World!</h1>
-        </div>
+        <Styles.SectionThin onLoadedData={window.scrollTo(0, 0)}>
+          <Styles.CheetosVert style={{ width: `${cheetVerW}` }} />
+          <Styles.FandangosVert style={{ width: `${fandVerW}` }} />
+        </Styles.SectionThin>
       )}
     </main>
   );

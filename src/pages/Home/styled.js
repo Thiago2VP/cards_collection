@@ -239,25 +239,36 @@ export const Naruto = styled.div`
   z-index: 2;
   transition: width 1.8s linear 0.1s;
 
-  .LogoNaru {
-    animation: shadowChange 1.5s linear 0.1s infinite;
-  }
   .logoImg {
     animation: logoChange 1.5s linear 0.1s infinite;
   }
   .ArrowLeft {
-    transform: rotate(180deg);
+    animation: arrowLChange 1.5s linear 0.1s infinite;
+  }
+  .ArrowRight {
+    animation: arrowRChange 1.5s linear 0.1s infinite;
   }
 
-  @keyframes shadowChange {
+  @keyframes arrowRChange {
     0% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
     }
     50% {
-      text-shadow: -1px -1px;
+      transform: scale(1.1);
     }
     100% {
-      text-shadow: 0px 0px;
+      transform: scale(1);
+    }
+  }
+  @keyframes arrowLChange {
+    0% {
+      transform: scale(1) rotate(180deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(180deg);
+    }
+    100% {
+      transform: scale(1) rotate(180deg);
     }
   }
   @keyframes logoChange {
@@ -291,24 +302,21 @@ export const Xmen = styled.div`
   transition: width 1.8s linear 0.1s;
 
   .LogoXmen {
-    animation: shadowChange 1.5s linear 0.1s infinite;
+    animation: xArrowchange 1.5s linear 0.1s infinite;
   }
   .logoImg {
     animation: logoChange 1.5s linear 0.1s infinite;
   }
-  .ArrowLeft {
-    transform: rotate(180deg);
-  }
 
-  @keyframes shadowChange {
+  @keyframes xArrowchange {
     0% {
-      text-shadow: 0px 0px;
+      transform: scale(1) rotate(180deg);
     }
     50% {
-      text-shadow: -1px -1px;
+      transform: scale(1.1) rotate(180deg);
     }
     100% {
-      text-shadow: 0px 0px;
+      transform: scale(1) rotate(180deg);
     }
   }
   @keyframes logoChange {
@@ -322,4 +330,27 @@ export const Xmen = styled.div`
       transform: scale(1);
     }
   }
+`;
+
+export const SectionThin = styled.section`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+  justify-content: center;
+  position: relative;
+`;
+
+export const CheetosVert = styled.div`
+  background-color: ${colors.cheetosColor};
+  color: ${colors.skinBack};
+  height: 33vh;
+  transition: width 1.8s linear 0.1s;
+`;
+
+export const FandangosVert = styled.div`
+  background-color: ${colors.fandangosColor};
+  color: ${colors.skinBack};
+  height: 33vh;
+  transition: width 1.8s linear 0.1s;
 `;

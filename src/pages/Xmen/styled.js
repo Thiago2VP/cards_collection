@@ -22,10 +22,11 @@ export const CollectionSection = styled.section`
     margin: 2rem auto;
     padding: 0;
     display: flex;
+    transition: transform 0.4s linear 0.1s;
   }
   .CardEffectXmen:hover {
-    background: rgba(193, 182, 190, 0.8);
-    animation: brightXmn 3.8s linear 0.1s infinite;
+    transform: skewY(7deg) rotateY(20deg);
+    transition: transform 0.4s linear 0.1s;
 
     .CardImg {
       padding: 0;
@@ -49,23 +50,6 @@ export const CollectionSection = styled.section`
   @media (max-width: 300px) {
     padding: 0;
   }
-  @keyframes brightXmn {
-    0% {
-      box-shadow: 7px 7px 20px #c1b6be;
-    }
-    20% {
-      box-shadow: 7px -7px 20px #c1b6be;
-    }
-    40% {
-      box-shadow: -7px -7px 20px #c1b6be;
-    }
-    60% {
-      box-shadow: -7px 7px 20px #c1b6be;
-    }
-    100% {
-      box-shadow: 7px 7px 20px #c1b6be;
-    }
-  }
 `;
 
 export const BackSection = styled.section`
@@ -85,10 +69,12 @@ export const BackSection = styled.section`
     border-radius: 100%;
     color: #4a0b0a;
     border: 5px solid #4a0b0a;
+    transition: background-color 0.4s linear 0.1s;
   }
   a:hover {
     background: #4a0b0a;
     color: #f9fd6b;
     border: 5px solid #f9fd6b;
+    transition: background-color 0.4s linear 0.1s;
   }
 `;

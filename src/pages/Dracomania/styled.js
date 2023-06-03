@@ -26,10 +26,11 @@ export const CollectionSection = styled.section`
     padding: 0;
     display: flex;
     border-radius: 5%;
+    transition: transform 0.4s linear 0.1s;
   }
   .CardEffectDrac:hover {
-    background-color: rgba(217, 195, 137, 0.4);
-    animation: brightDrac 3.6s linear 0.1s infinite alternate;
+    transform: skewY(7deg) rotateY(20deg);
+    transition: transform 0.4s linear 0.1s;
 
     .CardImg {
       padding: 0;
@@ -53,23 +54,6 @@ export const CollectionSection = styled.section`
   @media (max-width: 300px) {
     padding: 0;
   }
-  @keyframes brightDrac {
-    0% {
-      box-shadow: 4px 4px 20px #d9c389;
-    }
-    20% {
-      box-shadow: 4px -4px 20px #d9c389;
-    }
-    40% {
-      box-shadow: -4px -4px 20px #d9c389;
-    }
-    60% {
-      box-shadow: -4px 4px 20px #d9c389;
-    }
-    100% {
-      box-shadow: 4px 4px 20px #d9c389;
-    }
-  }
 `;
 
 export const BackSection = styled.section`
@@ -89,10 +73,12 @@ export const BackSection = styled.section`
     border-radius: 100%;
     color: #aa7226;
     border: 5px solid #aa7226;
+    transition: background-color 0.4s linear 0.1s;
   }
   a:hover {
     background: #aa7226;
     color: #d9c389;
     border: 5px solid #d9c389;
+    transition: background-color 0.4s linear 0.1s;
   }
 `;
