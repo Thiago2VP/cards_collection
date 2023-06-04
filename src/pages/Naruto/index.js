@@ -36,7 +36,7 @@ import card30 from '../../assets/images/naruCards/narut-30.png';
 
 export default function Naruto() {
   return (
-    <Styles.Main>
+    <Styles.Main onLoadedData={window.scrollTo(0, 0)}>
       <Styles.CollectionSection>
         <div className="CardEffectNaru">
           <label className="Label" htmlFor="shur1" style={{ width: '100%', height: '100%' }}>

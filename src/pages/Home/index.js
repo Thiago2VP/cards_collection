@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaPlay } from 'react-icons/fa';
 
 import * as Styles from './styled';
 import chester from '../../assets/images/chester.png';
@@ -9,6 +10,10 @@ import respingo from '../../assets/images/respingo.png';
 import arrowRight from '../../assets/images/arrow-right.png';
 import naruLogo from '../../assets/images/narulogo.png';
 import wolverLogo from '../../assets/images/wolverlogo.png';
+import dracIsla from '../../assets/images/dracoIsla.png';
+import mitoIsla from '../../assets/images/mitoIsla.png';
+import naruIsla from '../../assets/images/naruIsland.png';
+import xmenIsla from '../../assets/images/xmenIsla.png';
 
 export default function Home() {
   const [mediaW, setMediaW] = useState(window.innerWidth);
@@ -22,8 +27,9 @@ export default function Home() {
   const [naruVis, setNaruVis] = useState('hidden');
   const [xmenW, setXmenW] = useState('0%');
   const [xmenVis, setXmenVis] = useState('hidden');
-  const [cheetVerW, setCheetVerW] = useState('0%');
-  const [fandVerW, setFandVerW] = useState('0%');
+  const [preVerVis, setPreVerVis] = useState('hidden');
+  const [preVerW, setPreVerW] = useState('0vw');
+  const [mapW, setMapW] = useState('0vw');
 
   if (mediaW > 1280) {
     setMediaW(1280);
@@ -38,14 +44,21 @@ export default function Home() {
     window.addEventListener('resize', handleResize);
   });
 
-  setTimeout(() => {
-    setPreVis('visible');
-    setCheetVerW('100%');
-  }, '600');
+  async function preVerWiChan() {
+    setPreVerW('100vw');
+    setTimeout(() => {
+      setPreVerVis('visible');
+    }, '1800');
+  }
 
   setTimeout(() => {
-    setFandVerW('100%');
-  }, '1200');
+    setPreVis('visible');
+    preVerWiChan();
+  }, '600');
+
+  async function mapReveal() {
+    setMapW('100vw');
+  }
 
   async function dracVisib() {
     setTimeout(() => {
@@ -146,7 +159,7 @@ export default function Home() {
               />
               <h1 style={{ visibility: `${preVis}` }}>Cards Collection</h1>
               <p style={{ visibility: `${preVis}` }}>
-                Veja algumas das coleções de cartas que vinham nos salgadinhos da elma chips
+                Veja algumas das coleções de cartas dos salgadinhos da elma chips
               </p>
               <button
                 type="button"
@@ -509,8 +522,29 @@ export default function Home() {
         </Styles.SectionWide>
       ) : (
         <Styles.SectionThin onLoadedData={window.scrollTo(0, 0)}>
-          <Styles.CheetosVert style={{ width: `${cheetVerW}` }} />
-          <Styles.FandangosVert style={{ width: `${fandVerW}` }} />
+          <Styles.ThinPresent style={{ width: `${preVerW}` }}>
+            <h1 style={{ visibility: `${preVerVis}` }}>Cards Collection</h1>
+            <p style={{ visibility: `${preVerVis}` }}>
+              Veja algumas das coleções de cartas dos salgadinhos da elma chips
+            </p>
+            <button type="button" onClick={mapReveal} style={{ visibility: `${preVerVis}` }}>
+              <FaPlay />
+            </button>
+          </Styles.ThinPresent>
+          <Styles.Map style={{ width: `${mapW}` }}>
+            <Link to="/dracomania">
+              <img src={dracIsla} alt="Dracomania" className="dracoIsla" />
+            </Link>
+            <Link to="/mitomania">
+              <img src={mitoIsla} alt="Mitomania" className="mitoIsla" />
+            </Link>
+            <Link to="/naruto">
+              <img src={naruIsla} alt="Naruto" className="naruIsla" />
+            </Link>
+            <Link to="/xmen">
+              <img src={xmenIsla} alt="Xmen" className="xmenIsla" />
+            </Link>
+          </Styles.Map>
         </Styles.SectionThin>
       )}
     </main>

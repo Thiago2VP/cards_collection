@@ -38,7 +38,7 @@ import card32 from '../../assets/images/dracoCards/drac-32.png';
 
 export default function Dracomania() {
   return (
-    <Styles.Main>
+    <Styles.Main onLoadedData={window.scrollTo(0, 0)}>
       <Styles.CollectionSection>
         <div className="CardEffectDrac">
           <div

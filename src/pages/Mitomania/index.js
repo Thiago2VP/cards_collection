@@ -36,7 +36,7 @@ import card30 from '../../assets/images/mitoCards/myth-30.png';
 
 export default function Mitomania() {
   return (
-    <Styles.Main>
+    <Styles.Main onLoadedData={window.scrollTo(0, 0)}>
       <Styles.CollectionSection>
         <div className="CardEffectMit">
           <div

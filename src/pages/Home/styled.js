@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import * as colors from '../../config/colors';
 import draBack from '../../assets/images/dracomania.webp';
 import mitback from '../../assets/images/mitomania.webp';
@@ -341,16 +342,106 @@ export const SectionThin = styled.section`
   position: relative;
 `;
 
-export const CheetosVert = styled.div`
-  background-color: ${colors.cheetosColor};
-  color: ${colors.skinBack};
-  height: 33vh;
+export const ThinPresent = styled.div`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 243, 35, 0.6);
   transition: width 1.8s linear 0.1s;
+  min-height: 100vh;
+
+  h1 {
+    font-size: 6rem;
+    text-shadow: 1px 0 #f90716, 0 -1px #f90716, 0 1px #f90716, -1px 0 #f90716;
+    transition: visibility 1.8s linear 0.1s;
+    color: ${colors.rufflesColor};
+  }
+  p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #100ea0;
+    padding: 1rem;
+    margin-top: 1rem;
+    transition: visibility 1.8s linear 0.1s;
+  }
+  button {
+    background-color: ${colors.color};
+    color: ${colors.rufflesColor};
+    border: none;
+    font-size: 4rem;
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+    padding: 1.4rem 0.8rem 1rem 1.6rem;
+    border-radius: 100%;
+    width: 68px;
+    height: 68px;
+    margin: 4rem auto;
+    text-align: center;
+    cursor: pointer;
+    animation: playScale 1.5s linear 0.1s infinite;
+  }
+  @keyframes playScale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 `;
 
-export const FandangosVert = styled.div`
-  background-color: ${colors.fandangosColor};
-  color: ${colors.skinBack};
-  height: 33vh;
+export const Map = styled.div`
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  min-height: 100vh;
+  background: ${colors.cheetosColor};
   transition: width 1.8s linear 0.1s;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-itens: center;
+  justify-content: center;
+
+  .dracoIsla {
+    width: 600px;
+    margin: 2rem 15%;
+    animation: islFloat 1.5s linear 0.1s infinite;
+  }
+  .mitoIsla {
+    width: 620px;
+    margin: 3rem 60%;
+    animation: islFloat 1.5s linear 0.1s infinite;
+  }
+  .naruIsla {
+    width: 700px;
+    margin: 5rem 18%;
+    animation: islFloat 1.5s linear 0.1s infinite;
+  }
+  .xmenIsla {
+    width: 800px;
+    margin: 8rem 50%;
+    animation: islFloat 1.5s linear 0.1s infinite;
+  }
+  @keyframes islFloat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 `;

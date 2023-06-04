@@ -36,7 +36,7 @@ import card30 from '../../assets/images/xmenCards/x-men-30.png';
 
 export default function Xmen() {
   return (
-    <Styles.Main>
+    <Styles.Main onLoadedData={window.scrollTo(0, 0)}>
       <Styles.CollectionSection>
         <div className="CardEffectXmen">
           <div
