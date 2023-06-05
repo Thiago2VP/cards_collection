@@ -8,4 +8,4 @@ two diferent home pages acording with orientation, for wide orientation is a cel
 any page with his collection and self properties
 
 ## Hyperlink
-soon
+<a href="https://cards-collection.netlify.app/">See App</a>
